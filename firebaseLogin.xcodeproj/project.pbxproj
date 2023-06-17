@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F702A3E1605009916C5 /* OnBoarding.swift */; };
+		AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F732A3E1657009916C5 /* Colors.swift */; };
 		AFC0B3EB2A3D677700861D45 /* firebaseLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */; };
 		AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EC2A3D677700861D45 /* ContentView.swift */; };
 		AFC0B3EF2A3D677800861D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC0B3EE2A3D677800861D45 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF6C1F702A3E1605009916C5 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		AF6C1F732A3E1657009916C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AFC0B3E72A3D677700861D45 /* firebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseLoginApp.swift; sourceTree = "<group>"; };
 		AFC0B3EC2A3D677700861D45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF6C1F6E2A3E15E1009916C5 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C1F6F2A3E15E9009916C5 /* View */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		AF6C1F6F2A3E15E9009916C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C1F702A3E1605009916C5 /* OnBoarding.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF6C1F722A3E1646009916C5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C1F732A3E1657009916C5 /* Colors.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		AFC0B3DE2A3D677700861D45 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +80,7 @@
 		AFC0B3E92A3D677700861D45 /* firebaseLogin */ = {
 			isa = PBXGroup;
 			children = (
+				AFC0B3F92A3D68D000861D45 /* Src */,
 				AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */,
 				AFC0B3EC2A3D677700861D45 /* ContentView.swift */,
 				AFC0B3EE2A3D677800861D45 /* Assets.xcassets */,
@@ -67,6 +96,39 @@
 				AFC0B3F22A3D677800861D45 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AFC0B3F92A3D68D000861D45 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C1F722A3E1646009916C5 /* Shared */,
+				AFC0B3FA2A3D68DC00861D45 /* Auth */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		AFC0B3FA2A3D68DC00861D45 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AF6C1F6E2A3E15E1009916C5 /* OnBoarding */,
+				AFC0B3FB2A3D68E300861D45 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AFC0B3FB2A3D68E300861D45 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AFC0B3FC2A3D68ED00861D45 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AFC0B3FC2A3D68ED00861D45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */,
+				AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */,
+				AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */,
 				AFC0B3EB2A3D677700861D45 /* firebaseLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
