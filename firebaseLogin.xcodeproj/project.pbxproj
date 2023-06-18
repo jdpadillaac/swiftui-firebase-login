@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F702A3E1605009916C5 /* OnBoarding.swift */; };
 		AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F732A3E1657009916C5 /* Colors.swift */; };
+		AF6C1F762A3E60FD009916C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F752A3E60FD009916C5 /* LoginView.swift */; };
+		AF8594482A3FBCF5003B0D0B /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8594472A3FBCF5003B0D0B /* Splash.swift */; };
+		AF85944B2A3FBD94003B0D0B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85944A2A3FBD94003B0D0B /* SplashViewModel.swift */; };
 		AFC0B3EB2A3D677700861D45 /* firebaseLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */; };
 		AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EC2A3D677700861D45 /* ContentView.swift */; };
 		AFC0B3EF2A3D677800861D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC0B3EE2A3D677800861D45 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		AF6C1F702A3E1605009916C5 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		AF6C1F732A3E1657009916C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AF6C1F752A3E60FD009916C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AF8594472A3FBCF5003B0D0B /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		AF85944A2A3FBD94003B0D0B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		AFC0B3E72A3D677700861D45 /* firebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseLoginApp.swift; sourceTree = "<group>"; };
 		AFC0B3EC2A3D677700861D45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,31 @@
 				AF6C1F732A3E1657009916C5 /* Colors.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		AF8594452A3FBCDD003B0D0B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AF8594492A3FBD73003B0D0B /* ViewModel */,
+				AF8594462A3FBCE8003B0D0B /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AF8594462A3FBCE8003B0D0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF8594472A3FBCF5003B0D0B /* Splash.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF8594492A3FBD73003B0D0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF85944A2A3FBD94003B0D0B /* SplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AFC0B3DE2A3D677700861D45 = {
@@ -110,6 +141,7 @@
 		AFC0B3FA2A3D68DC00861D45 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				AF8594452A3FBCDD003B0D0B /* Splash */,
 				AF6C1F6E2A3E15E1009916C5 /* OnBoarding */,
 				AFC0B3FB2A3D68E300861D45 /* Login */,
 			);
@@ -127,6 +159,7 @@
 		AFC0B3FC2A3D68ED00861D45 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AF6C1F752A3E60FD009916C5 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,6 +237,9 @@
 				AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */,
 				AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */,
 				AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */,
+				AF85944B2A3FBD94003B0D0B /* SplashViewModel.swift in Sources */,
+				AF6C1F762A3E60FD009916C5 /* LoginView.swift in Sources */,
+				AF8594482A3FBCF5003B0D0B /* Splash.swift in Sources */,
 				AFC0B3EB2A3D677700861D45 /* firebaseLoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

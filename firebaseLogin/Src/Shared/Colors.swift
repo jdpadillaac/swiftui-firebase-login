@@ -12,6 +12,8 @@ import SwiftUI
 struct AppColors {
     static let veryLightBlue = Color(hex: "#6C63FF")
     static let gunMetal = Color(hex: "#2F2E41")
+    static let silverSand = Color(hex: "#C4C4C4")
+    static let antiFlashWhite = Color(hex: "#f1f1f1")
 }
 
 
