@@ -8,6 +8,24 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @ObservedObject var loginVM = LoginViewModel()
+    
+    var body: some View {
+        
+        switch loginVM.loginState {
+        case .unAutehnticated:
+            LoginPageContent()
+        case .successLoggin:
+            EmptyView()
+        case .invalidCredentials:
+            EmptyView()
+        }
+    }
+}
+
+struct LoginPageContent: View {
+    
     var body: some View {
         VStack {
             ImageAndTitleHeader()
@@ -16,6 +34,7 @@ struct LoginView: View {
         .navigationBarBackButtonHidden()
     }
 }
+
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
