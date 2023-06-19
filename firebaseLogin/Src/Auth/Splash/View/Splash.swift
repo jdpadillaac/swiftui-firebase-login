@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SplashView: View {
     
-    @StateObject var splashViewModel = SplashViewModel()
+    @EnvironmentObject var splashViewModel: SplashViewModel
     
     var body: some View {
         if splashViewModel.goToOnboarding {
@@ -25,11 +25,7 @@ struct SplashView: View {
     }
 }
 
-struct Splahs_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashView()
-    }
-}
+
 
 struct SplashViewContent: View {
     

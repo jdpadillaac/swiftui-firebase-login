@@ -27,11 +27,22 @@ struct LoginView: View {
 struct LoginPageContent: View {
     
     var body: some View {
-        VStack {
-            ImageAndTitleHeader()
-            LoginForm()
+        NavigationStack  {
+            VStack {
+                ImageAndTitleHeader()
+                LoginForm()
+                
+                NavigationLink {
+                    RegisterView()
+                } label: {
+                    Text("Hola")
+                        .foregroundColor(.red)
+                }
+                    
+                
+            }
+            .navigationBarBackButtonHidden()
         }
-        .navigationBarBackButtonHidden()
     }
 }
 
