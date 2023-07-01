@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF5204D52A508B570070EFC5 /* Extentions .swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5204D42A508B570070EFC5 /* Extentions .swift */; };
 		AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F702A3E1605009916C5 /* OnBoarding.swift */; };
 		AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F732A3E1657009916C5 /* Colors.swift */; };
 		AF6C1F762A3E60FD009916C5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6C1F752A3E60FD009916C5 /* LoginView.swift */; };
@@ -20,6 +21,7 @@
 		AF85946B2A3FFDC2003B0D0B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AF85946A2A3FFDC2003B0D0B /* FirebaseFirestore */; };
 		AF85946D2A3FFF13003B0D0B /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85946C2A3FFF13003B0D0B /* RegisterViewModel.swift */; };
 		AF85946F2A400349003B0D0B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF85946E2A400349003B0D0B /* RegisterView.swift */; };
+		AF96AAF22A4FB550006C84BA /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF96AAF12A4FB550006C84BA /* Buttons.swift */; };
 		AFC0B3EB2A3D677700861D45 /* firebaseLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */; };
 		AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC0B3EC2A3D677700861D45 /* ContentView.swift */; };
 		AFC0B3EF2A3D677800861D45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC0B3EE2A3D677800861D45 /* Assets.xcassets */; };
@@ -27,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF5204D42A508B570070EFC5 /* Extentions .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extentions .swift"; sourceTree = "<group>"; };
 		AF6C1F702A3E1605009916C5 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		AF6C1F732A3E1657009916C5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AF6C1F752A3E60FD009916C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		AF8594652A3FF2F7003B0D0B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AF85946C2A3FFF13003B0D0B /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		AF85946E2A400349003B0D0B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		AF96AAF12A4FB550006C84BA /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		AFC0B3E72A3D677700861D45 /* firebaseLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebaseLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFC0B3EA2A3D677700861D45 /* firebaseLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firebaseLoginApp.swift; sourceTree = "<group>"; };
 		AFC0B3EC2A3D677700861D45 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				AF6C1F732A3E1657009916C5 /* Colors.swift */,
+				AF96AAF12A4FB550006C84BA /* Buttons.swift */,
+				AF5204D42A508B570070EFC5 /* Extentions .swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -313,8 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC0B3ED2A3D677700861D45 /* ContentView.swift in Sources */,
+				AF5204D52A508B570070EFC5 /* Extentions .swift in Sources */,
 				AF6C1F742A3E1657009916C5 /* Colors.swift in Sources */,
 				AF6C1F712A3E1605009916C5 /* OnBoarding.swift in Sources */,
+				AF96AAF22A4FB550006C84BA /* Buttons.swift in Sources */,
 				AF85944B2A3FBD94003B0D0B /* SplashViewModel.swift in Sources */,
 				AF85946D2A3FFF13003B0D0B /* RegisterViewModel.swift in Sources */,
 				AF85944E2A3FDF0D003B0D0B /* LoginViewModel.swift in Sources */,

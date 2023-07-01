@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    
     var body: some View {
         SplashView()
             .environmentObject(SplashViewModel())
@@ -19,3 +21,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

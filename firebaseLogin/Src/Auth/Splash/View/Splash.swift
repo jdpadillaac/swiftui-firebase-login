@@ -12,11 +12,13 @@ struct SplashView: View {
     @EnvironmentObject var splashViewModel: SplashViewModel
     
     var body: some View {
-        if splashViewModel.goToOnboarding {
+        
+        if splashViewModel.goToLogin {
+            LoginView()
+        } else if splashViewModel.goToOnboarding {
             withAnimation {
                 OnBoarding()
             }
-
         } else {
             withAnimation {
                 SplashViewContent()

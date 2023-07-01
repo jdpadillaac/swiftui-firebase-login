@@ -11,16 +11,24 @@ import Foundation
 final class RegisterViewModel: ObservableObject {
     
     let repository: UserRepository
+    @Published var errorMessage = "";
+    @Published var isVerificationCodeEnabled = false
     
     init(repo: UserRepository) {
         self.repository = repo
     }
     
-    
-    func saveNewUser()  -> Void {
-        let newUser = NewUserModel(name: "Jonatan Padilla", LastName: "Padilla", email: "email@email.com", password: "12345")
+    func saveNewUser(newUser: NewUserModel)  -> Void {
         repository.newUser(newUser, completion: { result in
             print("ok")
+            
+            switch result {
+            case .success(_):
+                self.isVerificationCodeEnabled = true;
+            
+            case .failure(var err):
+                print(err)
+            }
         })
     }
     

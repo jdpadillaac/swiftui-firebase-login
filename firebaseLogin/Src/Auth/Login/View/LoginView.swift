@@ -29,17 +29,16 @@ struct LoginPageContent: View {
     var body: some View {
         NavigationStack  {
             VStack {
-                ImageAndTitleHeader()
+                Spacer()
+                    .frame(height: 42)
+                ImageAndTitleHeader(
+                    title: "Welcome back",
+                    subtitle: "sign in to access your account"
+                )
                 LoginForm()
-                
-                NavigationLink {
-                    RegisterView()
-                } label: {
-                    Text("Hola")
-                        .foregroundColor(.red)
-                }
-                    
-                
+                RememberAndForgotPass()
+                Spacer()
+                PageBottom()
             }
             .navigationBarBackButtonHidden()
         }
@@ -87,26 +86,31 @@ struct LoginForm: View {
 
 struct ImageAndTitleHeader: View {
     
+    let title: String
+    let subtitle: String
+    var paddingBottom: CGFloat?
+    
+    
     var body: some View {
         ZStack {
             Image("walk-tree-mountain")
                 .padding(.leading, 100)
             
             VStack {
-                Text("Welcome back")
+                Text(title)
                     .font(.system(size: 24))
                     .bold()
                 
                 Spacer()
                     .frame(height: 8)
                 
-                Text("Sign in to access you account")
+                Text(subtitle)
                     .font(.system(size: 14))
             }
             .padding(.top, 65)
 
         }
-        .padding(.bottom, 32)
+        .padding(.bottom, paddingBottom)
     }
 }
 
@@ -118,6 +122,7 @@ struct AppTextField: View {
     let title: String
     let iconName: String
     var isPassword: Bool = false
+    var keyboardType: UIKeyboardType?
     
     var body: some View {
         HStack(spacing: 0) {
@@ -130,7 +135,7 @@ struct AppTextField: View {
                 TextField(title, text: $text)
                     .padding(.leading)
                     .font(.system(size: 14))
-                    .keyboardType(.emailAddress)
+                    .keyboardType(keyboardType ?? .default)
             }
                
             
@@ -145,4 +150,66 @@ struct AppTextField: View {
         .cornerRadius(10)
     }
 }
+
+
+
+struct RememberAndForgotPass: View {
+    
+    var body: some View {
+        HStack {
+            HStack {
+                Rectangle()
+                    .foregroundColor(.clear)
+                    .frame(width: 12, height: 12)
+                    .cornerRadius(3)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 3)
+                        .inset(by: 0.5)
+                        .stroke(Color(red: 0.8, green: 0.8, blue: 0.8), lineWidth: 1)
+                    )
+                Text("Remember me")
+                    .font(.system(size: 12))
+                    .foregroundColor(AppColors.raisinBlack)
+                
+            }
+            Spacer()
+            Text("Forget password ?")
+                .font(.system(size: 12))
+                .foregroundColor(AppColors.veryLightBlue)
+        }
+        .padding(.horizontal, 31)
+        .padding(.top, 16)
+    }
+}
+
+
+
+struct PageBottom: View {
+    
+    var body: some View {
+        VStack {
+            NextButton("Next", icon: "chevron.right") {
+                
+            }
+            Spacer()
+                .frame(height: 24)
+            HStack {
+                Text("New Member?")
+                    .fontWeight(.medium)
+                    .font(.system(size: 13))
+                
+                NavigationLink(destination: RegisterView() , label: {
+                    Text("Register now")
+                        .fontWeight(.medium)
+                        .font(.system(size: 13))
+                        .foregroundColor(AppColors.veryLightBlue)
+                })
+            }
+            
+        }
+    }
+}
+
+
+
 

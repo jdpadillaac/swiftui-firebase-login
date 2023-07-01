@@ -14,6 +14,7 @@ struct AppColors {
     static let gunMetal = Color(hex: "#2F2E41")
     static let silverSand = Color(hex: "#C4C4C4")
     static let antiFlashWhite = Color(hex: "#f1f1f1")
+    static let raisinBlack = Color(hex: "#252525")
 }
 
 
